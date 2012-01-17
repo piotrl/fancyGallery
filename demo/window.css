@@ -1,0 +1,145 @@
+body {
+	font-family: Helvetica;
+	background: url('img/bg.png');
+	font-size: 10px;
+	width: 660px;
+	margin: 100px auto;
+}
+
+/*
+ * HEADER BAR
+ * ---------------------------------- */
+
+#headbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #F7F7F7;
+	border-bottom: 4px solid #F8BF27;
+	font-size: 14px;
+
+	box-shadow: 0 2px 15px rgba(0,0,0,0.25);
+}
+
+#headbar > .content {
+	width: 800px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 auto;
+}
+
+#headbar .logo {
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin-bottom: -10px;
+	border-radius: 50%;
+	border: 5px solid #F8BF27;
+	overflow: hidden;
+}
+
+#headbar .logo img {
+	max-height: 100px;
+}
+
+#headbar h1 {
+	float: left;
+	padding-left: 20px;
+	margin: 0;
+	color: #F8BF27;
+	font-size: 1.7em;
+	text-shadow: 1px 1px 0px #FFF, 2px 2px 0px #F8BF27;
+}
+
+#headbar ul {
+	float: right;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#headbar ul li {
+	float: left;
+}
+
+#headbar ul li a {
+	display: block;
+	padding: 0 10px;
+	font-family: Verdana;
+	color: #444;
+	text-decoration: none;
+
+	-webkit-transition: .5s;
+}
+
+#headbar ul li a:after {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	margin: 0 auto;
+	width: 8px;
+	height: 8px;
+	border-top: 4px solid #F8BF27;
+	border-right: 4px solid #F8BF27;
+
+	-webkit-transform: rotate(135deg);
+}
+
+/*
+ * OTHER STUFF
+ * ---------------------------------- */
+.shadooooow {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 7px;
+	padding: 10px;
+}
+
+.window {
+	/*background: #FFF;*/
+	border-radius: 7px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+.window > header {
+	background: url('img/bg_header.png');
+	height: 98px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	color: #FFF;
+}
+
+.window > header h1 {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	text-shadow: 1px 1px #FFF;
+	margin: 42px 50px;
+}
+
+.window > .message {
+	padding: 50px;
+}
+
+.window > .message h1 {
+	color: #666;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.window > .message p {
+	border-top: 1px dashed #e5e5e5;
+	border-bottom: 1px dashed #e5e5e5;
+	color: #999;
+	font-size: 14px;
+	padding: 20px 0;
+}
+
+.window > .message a {
+	text-decoration: none;
+	color: #4aa6d6;
+	font-size: 14px;
+}
