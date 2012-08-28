@@ -64,3 +64,34 @@ ul.thumbs li a:hover {
 ul.thumbs li :hover + {
 	pointer-events: none;
 }
+
+@-webkit-keyframes out {
+	0% 	{ opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes out {
+	0% 	{ opacity: 1; }
+	100% { opacity: 0; }
+}
+@-o-keyframes out {
+	0% 	{ opacity: 1; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes out {
+	0% 	{ opacity: 1; }
+	100% { opacity: 0; }
+}
+@keyframes out {
+	0% 	{ opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.out {
+	-webkit-animation: out 1s;
+	   -moz-animation: out 1s;
+		-ms-animation: out 1s;
+		 -o-animation: out 1s;
+			animation: out 1s;
+	z-index: 1;
+}

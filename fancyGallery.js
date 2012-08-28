@@ -24,7 +24,7 @@ var fancyGallery = {
 		cache.src = imgEl[0].src;
 		cache.classList.add('out');
 		el.appendChild(cache);
-		
+
 		if(imgEl.length >= 2) el.removeChild(imgEl[1]);
 	}
 
@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			var preview = document.querySelector('.preview');
 
 			fancyGallery.doCacheImg(preview);	
-	    	preview.getElementsByTagName('img')[0].src = el.src.replace('_thumb','');
+		preview.getElementsByTagName('img')[0].src = el.src.replace('_thumb','');
 		}, false);
-	 
 	});
 });
