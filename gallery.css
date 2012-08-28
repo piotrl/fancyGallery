@@ -13,7 +13,7 @@
 	max-width: 640px;
 }
 
-.preview img.hidden {
+.preview img.proper {
     position: absolute;
     top: 0;
 }
