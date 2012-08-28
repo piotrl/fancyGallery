@@ -60,6 +60,7 @@ ul.thumbs li a:hover {
 
 	transform: rotate(0deg);
 	transition: margin .3s, transform .3s, padding .2s .3s;
+	transition-delay: 0.1s;
 }
 ul.thumbs li :hover + {
 	pointer-events: none;

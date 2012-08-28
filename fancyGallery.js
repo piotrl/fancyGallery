@@ -1,4 +1,8 @@
-/* fancyGallery v0.1 */
+/**
+ * fancyGallery v0.2
+ * @author Piotr Lewandowski
+ * @URL piotrl.net
+ */
 
 var fancyGallery = {
 	names: [],
@@ -31,6 +35,7 @@ var fancyGallery = {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
 	fancyGallery.getThumbs();
 
 	[].forEach.call( fancyGallery.thumbs, function(el) {
@@ -41,5 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			fancyGallery.doCacheImg(preview);	
 		preview.getElementsByTagName('img')[0].src = el.src.replace('_thumb','');
 		}, false);
+
 	});
 });
